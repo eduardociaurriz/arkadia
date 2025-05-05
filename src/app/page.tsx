@@ -1,23 +1,20 @@
 "use client";
 
 import { NextPage } from "next/types";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-import Loading from "./components/loading";
-import TopMenu from "./components/Topmenu";
-import BotMenu from "./components/Botmenu";
-
+import Header from "./components/Header/Header";
+import Content from "./components/Content/Content";
+import Footer from "./components/Footer";
 
 const MainPage: NextPage = () => {
-
-  useEffect(() => {
-
-  }, []);
+  const [lang, setLang] = useState<string>("es-ES");
 
   return (
     <>
-      <TopMenu />
-      <BotMenu />
+      <Header />
+      <Content />
+      <Footer />
     </>
   );
 };
