@@ -16,14 +16,22 @@
   }
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
-  height: 100vh; /* o 100% si html también tiene altura */
-  overflow: hidden; /* ⚠️ Oculta el scroll */
-  background-color: rgb(139, 19, 69);
+  height: 100%;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
+html {
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

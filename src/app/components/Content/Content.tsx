@@ -6,7 +6,7 @@ const Content: React.FC<ContentProps> = () => {
 
 
     return (
-        <div className="content flex items-center justify-center p-1 pl-4">
+        <div className="content flex items-center justify-center p-1 pl-4 ">
             <Contact />
         </div>
     );
