@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Arkadia Dance Studio",
-  description: "Studio de danza",
+  description: "Estudio de danzas urbanas",
 };
 
 export default function RootLayout({
@@ -16,6 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+        async
+        defer
+      ></script>
       <body className={inter.className}>{children}</body>
     </html>
   );
